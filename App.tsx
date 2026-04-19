@@ -5,18 +5,11 @@ import MainTabs from './src/screens/MainTabs';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <MainTabs/>
-       <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <MainTabs />
+      <StatusBar style="auto" />
+    </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
