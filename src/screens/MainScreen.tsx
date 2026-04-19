@@ -1,10 +1,13 @@
 import { View, StyleSheet, Text} from 'react-native';
+import { Header } from '../components/Header';
 
 
 export default function MainScreen() {
   return (
     <View style={styles.container}>
-        <Text>MainScreen</Text>
+        <Header/>
+      <View style={styles.content}>
+      </View>
     </View>
   );
 }
@@ -15,5 +18,10 @@ const styles = StyleSheet.create({
         flex:1,
         alignItems:'center',
         justifyContent:'center',
-    }
+    },
+    content:{
+        flex:1,
+        width:'100%',
+        padding:20,
+    },
 });
