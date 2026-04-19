@@ -1,5 +1,6 @@
 import { View, StyleSheet, Text} from 'react-native';
 import { Header } from '../components/Header';
+import { TaskInput } from '../components/TaskInput';
 
 
 export default function MainScreen() {
@@ -7,6 +8,7 @@ export default function MainScreen() {
     <View style={styles.container}>
         <Header/>
       <View style={styles.content}>
+        <TaskInput/>
       </View>
     </View>
   );
